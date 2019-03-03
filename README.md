@@ -107,6 +107,7 @@ Puis "open browser preview", "preview on port 8080" and voila !
 Option 1: Suivre l'option recommandée par Google:
 https://cloud.google.com/ml-engine/docs/notebooks/save-to-github
 
+Option 2: Utiliser google cloud storage...
 
 ## Autres services
 
