@@ -83,7 +83,15 @@ https://cloud.google.com/compute/docs/instances/preemptible
 
 ### Se connecter au jupyter de cette instance
 
-**Option 1: Option Web (BETA)**
+**Option 1: Google Cloud Shell**
+
+Depuis google cloud shell: `gcloud compute ssh ${USER}@${INSTANCE_NAME} -- L 8080:localhost:8080`
+
+Puis "open browser preview", "preview on port 8080" and voila !
+
+**Note: La version de IPYTHON des dernières machines est 7.3.0 ce qui signifie qu'il est possible de faire !pip install truc dans un jupyter et que ça fonctionne !**
+
+**Option 2: Option Web (BETA, ça ne marche pas encore en fait...)**
 Ceci est une nouvelle option offerte par GCP, mais elle est en bêta donc rien n'est garanti.
 
 Depuis votre navigateur, rendez-vous à l'URL:
@@ -94,13 +102,6 @@ Dans le cas ci dessus:
 
 https://hackathon-isae-dev-gpu-dot-datalab-vm.googleusercontent.com/lab?
 
-**Option 2: Google Cloud Shell**
-
-Depuis google cloud shell: `gcloud compute ssh ${USER}@${INSTANCE_NAME} -- L 8080:localhost:8080`
-
-Puis "open browser preview", "preview on port 8080" and voila !
-
-**Note: La version de IPYTHON des dernières machines est 7.3.0 ce qui signifie qu'il est possible de faire !pip install truc dans un jupyter et que ça fonctionne !**
 
 ### Synchroniser ses sources
 
